@@ -17,7 +17,7 @@ Write a Linked List with OOP in Javascript using TDD.
 
 - [ ] Write a Binary Search tree with OOP in Javascript using TDD.
 
-### - [ ] Resolutions
+### Resolutions
 
 Write a React App to track New Years Resolutions
 Should be able to:
@@ -28,7 +28,7 @@ Should be able to:
 - [ ] View resolutions
 - [ ] Search/filter by Title, description, status, tags
 
-### - [ ] jQuery Carousel
+### jQuery Carousel
 
 #### Phase I:
 
