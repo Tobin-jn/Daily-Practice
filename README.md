@@ -3,18 +3,23 @@
 ### Linked List
 
 Write a Linked List with OOP in Javascript using TDD.
+- [ ] Push
+- [ ] Pop
+- [ ] Delete
+- [ ] Includes
+- [ ] to Array
+- [ ] Index
+- [ ] Insert
+- [ ] InsertAfter
+- [ ] Distance
 
 ### Resolutions
 
 Write a React App to track New Years Resolutions
 Should be able to:
 
-* Add new - title, description, status, tags
-
-* Edit resolutions
-
-* Delete resolutions
-
-* View resolutions
-
-* Search/filter by Title, description, status, tags
+- [ ] Add new - title, description, status, tags
+- [ ] Edit resolutions
+- [ ] Delete resolutions
+- [ ] View resolutions
+- [ ] Search/filter by Title, description, status, tags
