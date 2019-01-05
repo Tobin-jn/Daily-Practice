@@ -1,0 +1,123 @@
+<html>
+  <head>
+    <title>jQuery Carousel</title>
+    <style type="text/css">
+      body {
+        background: black;
+      }
+
+      .image {
+        position: relative;
+        height: 400px;
+        background-image: url("https://placebear.com/450/300");
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      .pic {
+        height: 400px;
+        display: block;
+        margin: 0 auto;
+      }
+
+      .icon {
+        position: relative;
+      }
+
+      .previous {
+        top: 150px;
+        left: 220px;
+      }
+
+      .next {
+        top: 150px;
+        left: 540px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <h1>Title</h1>
+      <div class="image">
+        <img class='icon previous' src="./icons/left-arrow.png" alt="previous">
+
+
+        <img class='icon next' src="./icons/right-arrow.png" alt="next">
+      </div>
+
+    </div>
+
+    <script
+      src="http://code.jquery.com/jquery-3.2.1.js"
+      integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+      crossorigin="anonymous">
+    </script>
+
+    <!-- Feel free to do your JavaScript logic directly in the HTML file for the sake of time -->
+    <script type="text/javascript">
+
+      $('.previous').on('click', previousPic)
+      $('.next').on('click', nextPic)
+
+      // $(document).ready(function() {
+      //   $('.image').append(images[0])
+      // })
+
+      let currentPic = 0
+
+      const images = [
+        "https://placebear.com/450/300",
+        "https://placekitten.com/450/300",
+        "https://www.hearingdogs.org.uk/globalassets/sponsor/jade/jade-hero-450-300.jpg",
+      ]
+
+
+      function nextPic() {
+        if (currentPic ===2){
+          currentPic = 0
+        } else {
+          currentPic++
+        }
+        
+        $('.image').css('background-image', `url(${images[currentPic]})`)
+
+
+      }
+
+      function previousPic() {
+        if (currentPic === 0){
+          currentPic = 2
+        } else {
+          currentPic--
+        }
+        
+        $('.image').css('background-image', `url(${images[currentPic]})`)
+
+      }
+
+      // $(this).hide("slide", { direction: "left" }, 1000);
+      
+    </script>
+  </body>
+</html>
+
+<!-- # Phase I:
+
+* **When clicking the right arrow:** the current image should slide out to the left, and the next image should slide in from the right
+* **When clicking the left arrow:** the current image should slide out to the right, and the previous image should slide in from the left
+* When I reach the end of the slide show, hide the right arrow
+* When I reach the beginning of the slide show, hide the left arrow
+* Try using only CSS3 for the slide animation; use jQuery for the click handling and current slide detection
+
+### Phase II:
+
+* Images should slide in an infinite loop
+* Images should automatically slide every 5 seconds
+* The 5-second timer should be reset every time a new image is displayed
+
+Here are some conveniently-sized images for you to use:
+
+* [Bear](https://placebear.com/450/300)
+* [Kitten](https://placekitten.com/450/300)
+* [Puppy](https://www.hearingdogs.org.uk/globalassets/sponsor/jade/jade-hero-450-300.jpg) -->
