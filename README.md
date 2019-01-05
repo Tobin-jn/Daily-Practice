@@ -53,3 +53,7 @@ Build a stoplight in React. Upon refreshing the app, the stoplight starts as red
 ### Stoplight Vanilla JS
 
 Build a stoplight in Vanilla JS. Upon refreshing the app, the stoplight starts as red, changes, to yellow and then to green.
+
+### So Many Activities
+
+Make a React App to track fun events. Instructions in Readme's
