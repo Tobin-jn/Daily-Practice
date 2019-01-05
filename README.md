@@ -45,3 +45,11 @@ Images:
 * [Bear](https://placebear.com/450/300)
 * [Kitten](https://placekitten.com/450/300)
 * [Puppy](https://www.hearingdogs.org.uk/globalassets/sponsor/jade/jade-hero-450-300.jpg) -->
+
+### Stoplight React
+
+Build a stoplight in React. Upon refreshing the app, the stoplight starts as red, changes, to yellow and then to green.
+
+### Stoplight Vanilla JS
+
+Build a stoplight in Vanilla JS. Upon refreshing the app, the stoplight starts as red, changes, to yellow and then to green.
