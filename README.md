@@ -1,5 +1,18 @@
 # Daily Practice
 
+A repository to keep my code for various small, coding challenges.
+
+### Tech Stack
+
+* React
+* Vanilla Javascript
+* jQuery
+* CSS
+* HTML
+* Testing: Mocha, Chai, Jest
+
+## Code Challenges
+
 ### Linked List
 
 Write a Linked List with OOP in Javascript using TDD.
@@ -48,7 +61,7 @@ Should be able to:
 
 - [ ] Build a tip calculator in Vanilla JS
 
-### Future Days...
+## Future Code Challenge Ideas
 * Build Minesweeper
 * Make a Ransom Note generator
 * Make a Braille translator
