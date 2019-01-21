@@ -46,8 +46,11 @@ Should be able to:
 - [ ] Create an image carousel using jQuery. Instructions in Readme.
 
 ### Stoplight React
+January 21, 2019
 
-- [ ] Build a stoplight in React. Upon refreshing the app, the stoplight starts as red, changes, to yellow and then to green.
+- [X] Build a stoplight in React. 
+    iteration 1: Upon refreshing the app, the stoplight starts as red, changes, to yellow and then to green.
+    iteration 2: the light continually changes at the interval specified
 
 ### Stoplight Vanilla JS
 
