@@ -50,8 +50,8 @@ January 21, 2019
 
 - [X] Build a stoplight in React. 
 
-    iteration 1: Upon refreshing the app, the stoplight starts as red, changes, to yellow and then to green.
-    iteration 2: the light continually changes at the interval specified
+    * iteration 1: Upon refreshing the app, the stoplight starts as red, changes, to yellow and then to green.
+    * iteration 2: the light continually changes at the interval specified
 
 ### Stoplight Vanilla JS
 
