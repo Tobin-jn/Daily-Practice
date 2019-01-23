@@ -145,7 +145,7 @@ describe('BinaryTree', () => {
     });
   });
 
-  describe.skip('delete', () => {
+  describe('delete', () => {
     beforeEach(() => {
       /*
         *        4
@@ -163,7 +163,7 @@ describe('BinaryTree', () => {
       tree.insert(1);
     });
 
-    it.skip('should delete node with no children', () => {
+    it('should delete node with no children', () => {
       let node = tree.find(1);
 
       expect(tree.rootNode.left.left).to.equal(node);
