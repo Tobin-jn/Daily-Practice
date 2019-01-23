@@ -94,28 +94,54 @@ class BinaryTree{
  
     }
   }
+//From lesson
+  delete(value) {
+    let currentNode = this.rootNode;
+    let nodeToDelete = this.find(value)
+    let deletedNode = null;
+    let deletedFound = false;
 
-  // delete(value) {
-  //   let currentNode = this.rootNode
+    if (!nodeToDelete) {
+      deletedNode = undefined;
+      deletedFound = true;
+    } else if (currentNode.value === value) {
+      deletedNode = currentNode;
+      this.rootNode = null;
+      deletedFound = true
+    }
 
-  //   while (currentNode) {
-  //     if(currentNode.left.value === value){
-  //       currentNode.left = null
-  //       break;
-  //     } else if (currentNode.right.value === value){
-  //       currentNode.right = null
-  //       break;
-  //     } else {
-  //       if(value <= currentNode.value){
-  //         currentNode = currentNode.left
-  //       } else {
-  //         currentNode = currentNode.right
-  //       }
-  //     }
-  //   }
-  // }
+    while (!deletedFound) {
 
+      if (currentNode.right && currentNode.value < value) {
+        
+        if (currentNode.right.value === value) {
+          deletedNode = currentNode.right
+          if (currentNode.right.right && !currentNode.left.left) {
+            currentNode.right = currentNode.right.right;
+          } else {
+            currentNode.right = null;
+          }
+          deletedFound = true
+        } else {
+          currentNode = currentNode.right
+        }
+      } else if (currentNode.left && currentNode.value > value) {
+        if(currentNode.left.value === value) {
+          deletedNode = currentNode.left
 
+          if (currentNode.left.left && !currentNode.right.right) {
+            currentNode.left = currentNode.left.left;
+          } else {
+            currentNode.left = null;
+          }
+          deletedFound = true;
+        } else {
+          currentNode = currentNode.left
+        }
+      }
+    }
+    return deletedNode
+  }
 }
 
 export default BinaryTree

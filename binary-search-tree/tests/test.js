@@ -171,7 +171,7 @@ describe('BinaryTree', () => {
       expect(tree.rootNode.left.left).to.equal(null);
     });
 
-    it.skip('should delete node with one child', () => {
+    it('should delete node with one child', () => {
       let node = tree.find(1);
 
       expect(tree.rootNode.left.left).to.equal(node);
@@ -186,7 +186,7 @@ describe('BinaryTree', () => {
       expect(tree.rootNode.right.right.value).to.equal(8);
     });
 
-    it.skip('should delete node with two children', () => {
+    it('should delete node with two children', () => {
       let node = tree.find(7);
 
       expect(tree.rootNode.right.right).to.equal(node);
