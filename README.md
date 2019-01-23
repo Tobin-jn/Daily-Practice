@@ -41,7 +41,7 @@ January 22, 2019
    - [X] Min
    - [X] Max
    - [X] Find
-   - [ ] Delete
+   - [X] Delete
    
 ### Resolutions
 
