@@ -8,11 +8,15 @@ describe('BinaryTree', () => {
     tree = new BinaryTree();
   });
 
-  it('should have a rootNode node defaulted to null', () => {
+  it('should have an instance of a tree', () => {
+    expect(tree).to.be.an('object')
+  })
+
+  it.skip('should have a rootNode node defaulted to null', () => {
     expect(tree.rootNode).to.equal(null);
   });
 
-  describe('insert', () => {
+  describe.skip('insert', () => {
     it('should be able to add a node to the Tree', () => {
       tree.insert(20);
 
@@ -61,7 +65,7 @@ describe('BinaryTree', () => {
     });
   });
 
-  describe('min and max', () => {
+  describe.skip('min and max', () => {
     it('min should return null if no nodes exist', () => {
       let tree = new BinaryTree();
 
@@ -93,7 +97,7 @@ describe('BinaryTree', () => {
     });
   });
 
-  describe('find', () => {
+  describe.skip('find', () => {
     beforeEach(() => {
       tree.insert(4);
       tree.insert(6);
@@ -141,7 +145,7 @@ describe('BinaryTree', () => {
     });
   });
 
-  describe('delete', () => {
+  describe.skip('delete', () => {
     beforeEach(() => {
       /*
         *        4
