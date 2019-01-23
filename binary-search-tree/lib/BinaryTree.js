@@ -94,8 +94,29 @@ class BinaryTree{
  
     }
   }
-}
 
+  // delete(value) {
+  //   let currentNode = this.rootNode
+
+  //   while (currentNode) {
+  //     if(currentNode.left.value === value){
+  //       currentNode.left = null
+  //       break;
+  //     } else if (currentNode.right.value === value){
+  //       currentNode.right = null
+  //       break;
+  //     } else {
+  //       if(value <= currentNode.value){
+  //         currentNode = currentNode.left
+  //       } else {
+  //         currentNode = currentNode.right
+  //       }
+  //     }
+  //   }
+  // }
+
+
+}
 
 export default BinaryTree
 
