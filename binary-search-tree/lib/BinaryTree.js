@@ -1,9 +1,101 @@
+import Node from './Node'
+
 class BinaryTree{
   constructor(){
-
+    this.rootNode = null
   }
 
+  insert(value) {
+    if(!this.rootNode){
+      this.rootNode = new Node(value)
+    } else {
+      this.addNode(value)
+    }
+  }
+
+  addNode(value) {
+    let currentNode = this.rootNode
+
+    while (currentNode) {
+      if (currentNode.value >= value){
+        if(!currentNode.left){
+          currentNode.left = new Node(value)
+          currentNode = null;
+          break;
+        } else {
+        currentNode = currentNode.left
+        }
+      } else {
+          if(!currentNode.right){
+            currentNode.right = new Node(value)
+            currentNode = null;
+            break;
+          } else {
+            currentNode = currentNode.right
+          }
+      }
+    } 
+  }
+  
+  min() {
+    if(!this.rootNode){
+      return null;
+    }
+
+    let currentNode = this.rootNode;
+    let min = null;
+
+    while(currentNode){
+      if(currentNode.left){
+        currentNode = currentNode.left
+      } else {
+        min = currentNode.value
+        currentNode = null
+      }
+    }
+    return min
+  }
+
+  max() {
+    if(!this.rootNode){
+      return null;
+    }
+
+    let currentNode = this.rootNode;
+    let max = null;
+
+    while(currentNode){
+      if(currentNode.right){
+        currentNode = currentNode.right
+      } else {
+        max = currentNode.value
+        currentNode = null
+      }
+    }
+    return max
+  }
+  
+
+  find(value) {
+    let currentNode = this.rootNode
+
+    while (currentNode) {
+      if(value === currentNode.value){
+        return currentNode
+      } else {
+        if(value <= currentNode.value && currentNode.left){
+          currentNode = currentNode.left
+        } else if (value > currentNode.value && currentNode.right){
+          currentNode = currentNode.right
+        } else {
+          return null
+        }
+      }
+ 
+    }
+  }
 }
+
 
 export default BinaryTree
 
@@ -59,36 +151,6 @@ export default BinaryTree
 //     this.rootNode = null;
 //   }
 
-// // insert(value) {
-
-// //   if (!this.rootNode){
-// //     this.rootNode = new Node(value);
-// //     return;
-// //   }
-
-// //   let currentNode = this.rootNode
-
-// //   while (currentNode) {
-
-// //     if ( value < currentNode.value ) {
-// //       if ( !currentNode.left ){
-// //         currentNode.left = new Node(value);
-// //         break;
-// //       } else {
-// //         currentNode = currentNode.left; 
-// //       }
-// //     }
-
-// //     if ( value < currentNode.value ) {
-// //       if ( !currentNode.right ){
-// //         currentNode.right = new Node(value);
-// //         break;
-// //       } else {
-// //         currentNode = currentNode.right; 
-// //       }
-// //     }
-// //   }
-// // }
 
 
 
