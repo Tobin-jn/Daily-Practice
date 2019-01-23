@@ -26,10 +26,23 @@ Write a Linked List with OOP in Javascript using TDD.
 - [ ] InsertAfter
 - [ ] Distance
 
+### Stoplight React
+January 21, 2019
+
+- [X] Build a stoplight in React. 
+
+    * iteration 1: Upon refreshing the app, the stoplight starts as red, changes, to yellow and then to green.
+    * iteration 2: the light continually changes at the interval specified
+
 ### Binary Search Tree
-
-- [ ] Write a Binary Search tree with OOP in Javascript using TDD.
-
+January 22, 2019
+- [X] Write a Binary Search tree with OOP in Javascript using TDD.
+   - [X] Insert
+   - [X] Min
+   - [X] Max
+   - [X] Find
+   - [ ] Delete
+   
 ### Resolutions
 
 Write a React App to track New Years Resolutions
@@ -45,13 +58,7 @@ Should be able to:
 
 - [ ] Create an image carousel using jQuery. Instructions in Readme.
 
-### Stoplight React
-January 21, 2019
 
-- [X] Build a stoplight in React. 
-
-    * iteration 1: Upon refreshing the app, the stoplight starts as red, changes, to yellow and then to green.
-    * iteration 2: the light continually changes at the interval specified
 
 ### Stoplight Vanilla JS
 
