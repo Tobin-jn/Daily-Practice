@@ -8,6 +8,10 @@ describe('BinaryTree', () => {
     tree = new BinaryTree();
   });
 
+  it('should have an instance of a tree', () => {
+    expect(tree).to.be.an('object')
+  })
+
   it('should have a rootNode node defaulted to null', () => {
     expect(tree.rootNode).to.equal(null);
   });
@@ -104,37 +108,37 @@ describe('BinaryTree', () => {
       tree.insert(1);
     });
 
-    it.skip('should return null if no match is found', () => {
+    it('should return null if no match is found', () => {
       let node = tree.find(10)
 
       expect(node).to.equal(null);
     });
 
-    it.skip('should be able to find the rootNode', () => {
+    it('should be able to find the rootNode', () => {
       let node = tree.find(4);
 
       expect(node).to.equal(tree.rootNode);
     });
 
-    it.skip('should be able to find results to the immediate left (2)', () => {
+    it('should be able to find results to the immediate left (2)', () => {
       let node = tree.find(2);
 
       expect(node).to.equal(tree.rootNode.left);
     });
 
-    it.skip('should be able to find results to the far left (1)', () => {
+    it('should be able to find results to the far left (1)', () => {
       let node = tree.find(1);
 
       expect(node).to.equal(tree.rootNode.left.left);
     });
 
-    it.skip('should be able to find results to the immediate right (6)', () => {
+    it('should be able to find results to the immediate right (6)', () => {
       let node = tree.find(6);
 
       expect(node).to.equal(tree.rootNode.right);
     });
 
-    it.skip('should be able to find nested results (5 and 3)', () => {
+    it('should be able to find nested results (5 and 3)', () => {
       let node = tree.find(5);
 
       expect(node).to.equal(tree.rootNode.right.left);
@@ -159,7 +163,7 @@ describe('BinaryTree', () => {
       tree.insert(1);
     });
 
-    it.skip('should delete node with no children', () => {
+    it('should delete node with no children', () => {
       let node = tree.find(1);
 
       expect(tree.rootNode.left.left).to.equal(node);
