@@ -43,6 +43,10 @@ January 22, 2019
    - [X] Find
    - [X] Delete
    
+### Tip Calculator React
+January 23, 2019
+- [X] Build a tip calculator in React
+   
 ### Resolutions
 
 Write a React App to track New Years Resolutions
