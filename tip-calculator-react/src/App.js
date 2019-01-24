@@ -38,20 +38,20 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <section className="body">
+        <section className="calculator">
           <h1>Tip Calculator</h1>
-          <form action="">
+          <form className='calculator__form'>
             Desired Tip Percent: <input 
               type="number" 
-              className="percentage"
+              className="calculator__percentage"
               placeholder="20%"
               name='tipPercent'
               value={this.state.tipPercent}
               onChange={this.handleChange}
-              />
+              /><br />
             Total Bill: <input 
               type="number" 
-              className="total"
+              className="calculator__total"
               placeholder='$100.00'
               name='totalBill'
               value={this.state.totalBill}
@@ -59,9 +59,9 @@ class App extends Component {
               />
           </form>
           <div className="results">
-            <h3>Tip</h3>
-            <p>Total Tip Amount: {this.state.totalTip} </p>
-            <p>Total Bill with Tip Amount: {this.state.totalBillWithTip}</p>
+            <h3 className='results__heading'>Tip</h3>
+            <p className='results__amount' >Total Tip Amount: <span>{this.state.totalTip}</span> </p>
+            <p className='results__amount' >Total Bill with Tip Amount: <span>{this.state.totalBillWithTip}</span></p>
           </div>
         </section>
       </div>
