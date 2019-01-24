@@ -18,8 +18,8 @@ class App extends Component {
         <section className="body">
           <h1>Tip Calculator</h1>
           <form action="">
-            Desired Tip Percent: <input type="text" className="percentage"/>
-            Total Bill: <input type="text" className="total"/>
+            Desired Tip Percent: <input type="number" className="percentage"/>
+            Total Bill: <input type="number" className="total"/>
           </form>
           <div className="results">
             <h3>Tip</h3>
