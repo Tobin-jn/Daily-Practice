@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import ResolutionsForm from './ResolutionsForm';
+import ControlForm from './ControlForm';
 import ResolutionsContainer from './ResolutionsContainer';
 
 class App extends Component {
@@ -22,7 +22,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <ResolutionsForm addResolution={this.addResolution} />
+        <ControlForm addResolution={this.addResolution} />
         <ResolutionsContainer resolutions={this.state.resolutions} />
       </div>
     );

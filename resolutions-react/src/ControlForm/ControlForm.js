@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class ResolutionsForm extends Component {
+class ControlForm extends Component {
   constructor() {
     super()
     this.state = {
@@ -87,7 +87,7 @@ class ResolutionsForm extends Component {
   }
  }
 
- export default ResolutionsForm;
+ export default ControlForm;
 
 
 
