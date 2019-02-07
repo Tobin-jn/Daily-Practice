@@ -1,5 +1,5 @@
 import React from 'react';
-import Resolution from './Resolution';
+import Resolution from '../Resolution';
 
 const ResolutionsContainer = ({resolutions}) => {
 

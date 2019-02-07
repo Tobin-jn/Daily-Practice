@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-import ControlForm from './ControlForm';
-import ResolutionsContainer from './ResolutionsContainer';
+import ControlForm from '../ControlForm';
+import ResolutionsContainer from '../ResolutionsContainer';
 
 class App extends Component {
   constructor() {
