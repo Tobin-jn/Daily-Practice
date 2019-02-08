@@ -1,16 +1,26 @@
 import React from 'react';
+import ContentEditable from '../ContentEditable'
 
 const Resolution = (props) => {
   const tags = props.tags.map( tag => {
-    return <p>{tag}</p>
+    return <p className='tag'>{tag}</p>
   })
 
-  return(
-    <div className="resolution">
-      <h1>{props.title}</h1>
-      <h3>{props.description}</h3>
-      <h4>{props.status}</h4>
+  let EditableH1 = ContentEditable('h1') 
+  let EditableH3 = ContentEditable('h3') 
+
+    return(
+    <div 
+      className="resolution"
+    >
+      <EditableH1 className='title' value={props.title} />
+      <EditableH3 className='description' value={props.description} />
+      <h4 className='status'>{props.status}</h4>
       { tags }
+      <h5
+        className='delete'
+        onClick={()=> props.removeResolution(props.id)}
+      >X</h5>
     </div>
   );
 }
