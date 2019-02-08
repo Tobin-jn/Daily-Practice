@@ -55,9 +55,11 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className= 'light' style={this.state.red}></div>
-        <div className= 'light' style={this.state.yellow}></div>
-        <div className= 'light' style={this.state.green}></div>
+        <div className='lights-container'>
+          <div className= 'light' style={this.state.red}></div>
+          <div className= 'light' style={this.state.yellow}></div>
+          <div className= 'light' style={this.state.green}></div>
+        </div>
       </div>
     );
   }
