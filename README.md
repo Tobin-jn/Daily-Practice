@@ -27,7 +27,6 @@ Write a Linked List with OOP in Javascript using TDD.
 - [ ] Distance
 
 ### Stoplight React
-January 21, 2019
 
 - [X] Build a stoplight in React. 
 
@@ -35,7 +34,6 @@ January 21, 2019
     * iteration 2: the light continually changes at the interval specified
 
 ### Binary Search Tree
-January 22, 2019
 - [X] Write a Binary Search tree with OOP in Javascript using TDD.
    - [X] Insert
    - [X] Min
@@ -44,7 +42,6 @@ January 22, 2019
    - [X] Delete
    
 ### Tip Calculator React
-January 23, 2019
 - [X] Build a tip calculator in React
    
 ### Resolutions
@@ -53,15 +50,14 @@ Write a React App to track New Years Resolutions
 Should be able to:
 
 - [X] Add new - title, description, status, tags
-- [ ] Edit resolutions
-- [ ] Delete resolutions
-- [ ] View resolutions
+- [X] Edit resolutions
+- [X] Delete resolutions
+- [X] View resolutions
 - [ ] Search/filter by Title, description, status, tags
 
 ### jQuery Carousel
 
 - [ ] Create an image carousel using jQuery. Instructions in Readme.
-
 
 
 ### Stoplight Vanilla JS
