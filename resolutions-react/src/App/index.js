@@ -19,11 +19,23 @@ class App extends Component {
     })
   }
 
+  removeResolution = (id) => {
+    const filteredResolutions = this.state.resolutions.filter( resolution => {
+      return resolution.id !== id
+    })
+    this.setState({
+      resolutions: filteredResolutions
+    })
+  }
+
   render() {
     return (
       <div className="App">
+        <h1>Resolution Planner</h1>
         <ControlForm addResolution={this.addResolution} />
-        <ResolutionsContainer resolutions={this.state.resolutions} />
+        <ResolutionsContainer 
+          resolutions={this.state.resolutions}
+          removeResolution={this.removeResolution} />
       </div>
     );
   }
