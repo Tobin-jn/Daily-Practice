@@ -31,11 +31,14 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1>Resolution Planner</h1>
-        <ControlForm addResolution={this.addResolution} />
-        <ResolutionsContainer 
-          resolutions={this.state.resolutions}
-          removeResolution={this.removeResolution} />
+        <h1 className='header'>Resolution Planner</h1>
+        <article className="container">
+          <ControlForm 
+            addResolution={this.addResolution} />
+          <ResolutionsContainer 
+            resolutions={this.state.resolutions}
+            removeResolution={this.removeResolution} />
+        </article>
       </div>
     );
   }
