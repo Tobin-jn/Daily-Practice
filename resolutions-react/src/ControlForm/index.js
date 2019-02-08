@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import '../App/App.css';
 
 class ControlForm extends Component {
   constructor() {
@@ -41,11 +42,12 @@ class ControlForm extends Component {
 
   render(){
     return(
-      <div className="resolution-container">
+      <div>
         <form 
           className="resolution-form"
           onSubmit={this.handleSubmit}>
-          <input 
+          <input
+            className='resolution-form__title-input' 
             type="text"
             placeholder="Title"
             onChange={this.handleChange}
@@ -53,39 +55,49 @@ class ControlForm extends Component {
             name="title"
             
           />
-          <input 
+          <textarea 
+            className='resolution-form__desc-input' 
             type="text"
             placeholder="Description"
             onChange={this.handleChange}
             value={this.state.description}
             name='description'
+            cols='20'
+            rows='4'
+          ></textarea>
+          <fieldset className='resolution-form__status-container' >
+            <legend>Status</legend>
+            <select 
+              className='resolution-form__status' 
+              name='status' 
+              value={this.state.status} 
+              onChange={this.handleChange} >
+              <option value="Not Completed">Not Completed</option>
+              <option value="In Progress">In Progress</option>
+              <option value="Completed">Completed</option>
+            </select>
+          </fieldset>
 
-          />
-          <select 
-            name='status' 
-            value={this.state.status} 
-            onChange={this.handleChange} >
-            <option value="Not Completed">Not Completed</option>
-            <option value="In Progress">In Progress</option>
-            <option value="Completed">Completed</option>
-          </select>
-
-          <select
-            multiple={true}
-            name='tags'
-            value={this.state.tags}
-            onChange={this.handleTags}>
-            <option value="Health">Health</option>
-            <option value="Work">Work</option>
-            <option value="Family">Family</option>
-            <option value="Good Habits">Good Habits</option>
-            <option value="Bad Habits">Bad Habits</option>
-            <option value="Friends">Friends</option>
-            <option value="Fun">Fun</option>
-          </select>
+          <fieldset className='resolution-form__tag-container'>
+            <legend>Resolution Tags</legend>
+            <select
+              className='resolution-form__tags'
+              multiple={true}
+              name='tags'
+              value={this.state.tags}
+              onChange={this.handleTags}>
+              <option value="Health">Health</option>
+              <option value="Work">Work</option>
+              <option value="Family">Family</option>
+              <option value="Good Habits">Good Habits</option>
+              <option value="Bad Habits">Bad Habits</option>
+              <option value="Friends">Friends</option>
+              <option value="Fun">Fun</option>
+            </select>
+          </fieldset>
 
           <button 
-            className="resolution-btn"
+            className='resolution-form__submit' 
             >Submit</button>
         </form>
       </div>
