@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class ResolutionsForm extends Component {
+class ControlForm extends Component {
   constructor() {
     super()
     this.state = {
@@ -31,6 +31,12 @@ class ResolutionsForm extends Component {
   handleSubmit = (event) => {
     event.preventDefault()
     this.props.addResolution(this.state)
+    this.setState({
+      title: '',
+      description: '',
+      status: 'Not Completed',
+      tags: [],
+    })
   }
 
   render(){
@@ -87,7 +93,7 @@ class ResolutionsForm extends Component {
   }
  }
 
- export default ResolutionsForm;
+ export default ControlForm;
 
 
 
