@@ -1,5 +1,6 @@
 import React from 'react';
 import Resolution from '../Resolution';
+import '../App/App.css';
 
 const ResolutionsContainer = ({resolutions, removeResolution}) => {
 
