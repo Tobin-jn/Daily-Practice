@@ -55,6 +55,8 @@ Should be able to:
 - [X] View resolutions
 - [ ] Search/filter by Title, description, status, tags
 
+<img src='screenshots/resolutions.png' alt='Resolutions App' width='300' >
+
 ### jQuery Carousel
 
 - [ ] Create an image carousel using jQuery. Instructions in Readme.
