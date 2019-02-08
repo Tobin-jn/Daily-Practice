@@ -1,10 +1,10 @@
 import React from 'react';
 import Resolution from '../Resolution';
 
-const ResolutionsContainer = ({resolutions}) => {
+const ResolutionsContainer = ({resolutions, removeResolution}) => {
 
   const cards = resolutions.map( res => {
-    return <Resolution key={res.id} {...res} />
+    return <Resolution key={res.id} {...res} removeResolution={removeResolution}/>
   })
 
   return(
