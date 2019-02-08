@@ -1,1 +1,97 @@
+.header {
+  text-align: center;
+  font-size: 4em;
+  color: #401e49;
+}
 
+.container {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  box-sizing: border-box;
+}
+
+/*----Controlled Form----*/
+
+.resolution-form {
+  grid-column: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #D3D3D3;
+  height: 100vh;
+}
+
+.resolution-form__title-input,
+.resolution-form__desc-input {
+  font-size: 2em;
+  margin: 10px;
+}
+
+.resolution-form__status-container,
+.resolution-form__tag-container {
+  margin: 10px;
+  background-color: #FFFFFF;
+}
+
+.resolution-form__status,
+.resolution-form__tags {
+  font-size: 1em;
+}
+
+.resolution-form__submit {
+  font-size: 1em;
+  margin: 10px;
+  padding: 10px;
+}
+
+/*----Resolutions----*/
+
+.resolution {
+  width: 90%;
+  margin: 20px auto;
+  border: black solid thin;
+  box-sizing: border-box;
+}
+
+.resolution__title {
+  font-size: 2em;
+  margin: 25px;
+}
+
+.resolution__desc {
+  font-size: 1.25em;
+  margin: 25px;
+}
+
+.resolution__status {
+  margin: 10px 25px;
+}
+
+.resolution__status--completed {
+  color: green;
+  margin: 10px 25px;
+}
+
+.resolution__status--not-completed {
+  color: red;
+  margin: 10px 25px;
+}
+
+.resolution__tag-container {
+  margin: 20px 25px;
+}
+
+.resolution__tag {
+  margin: 10px;
+  display: inline;
+  border: black solid thin;
+  padding: 5px;
+  background-color: #D3D3D3;
+}
+
+.resolution__remove {
+  text-align: center;
+  cursor: pointer;
+  margin: 10px 10px 10px 70%;
+  border: #000 solid thin;
+  width: 150px;
+}
