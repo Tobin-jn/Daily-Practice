@@ -33,7 +33,7 @@ Write a Linked List with OOP in Javascript using TDD.
     * iteration 1: Upon refreshing the app, the stoplight starts as red, changes, to yellow and then to green.
     * iteration 2: the light continually changes at the interval specified
     
-<img src='screenshots/stoplight.png' alt='Resolutions App' width='200' >
+<img src='screenshots/stoplight.png' alt='Resolutions App' width='50' >
 
 ### Binary Search Tree
 - [X] Write a Binary Search tree with OOP in Javascript using TDD.
