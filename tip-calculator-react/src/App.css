@@ -7,35 +7,26 @@
 
 .calculator__heading {
   font-size: 30px;
-
 }
 
 .calculator__form {
   font-size: 24px;
-
   text-align: left;
-/*  display: flex;
-  flex-direction: column;
-  align-content: flex-end;*/
 }
 
 .calculator__input-percentage {
   font-size: 24px;
-  /*margin: 0 200px 0 200px;*/
   text-align: center;
 }
 
 .calculator__input-total {
   font-size: 24px;
-
-  /*margin: 0 200px 0 200px;*/
   text-align: center;
 }
 
 .results {
   font-size: 1.5em;
   background-color: lightGray;
-  /*margin: 30px 200px 30px 200px;*/
   padding: 10px 0 10px 0;
 }
 
@@ -48,7 +39,6 @@
 .results__amount {
   text-align: left;
   margin: 0;
-  /*padding: 0px 20px 0px 150px;*/
 }
 
 .results__amount--color {
