@@ -1,51 +1,58 @@
-.App {
-}
 
-
-.calculator  {
+.calculator {
   border: solid 2px black;
   margin: 40px;
   text-align: center;
 }
 
+.calculator__heading {
+  font-size: 30px;
+
+}
+
 .calculator__form {
-  font-size: 1.5em;
-  display: flex;
+  font-size: 24px;
+
+  text-align: left;
+/*  display: flex;
   flex-direction: column;
-  align-content: flex-end;
-  
+  align-content: flex-end;*/
 }
 
-.calculator__percentage {
-  font-size: 1.5em;
-  margin: 0 200px 0 200px;
+.calculator__input-percentage {
+  font-size: 24px;
+  /*margin: 0 200px 0 200px;*/
   text-align: center;
 }
 
-.calculator__total  {
-  font-size: 1.5em;
-  margin: 0 200px 0 200px;
+.calculator__input-total {
+  font-size: 24px;
+
+  /*margin: 0 200px 0 200px;*/
   text-align: center;
 }
 
-.results  {
+.results {
   font-size: 1.5em;
   background-color: lightGray;
-  margin: 30px 200px 30px 200px;
+  /*margin: 30px 200px 30px 200px;*/
   padding: 10px 0 10px 0;
 }
 
-.results__heading  {
+.results__heading {
+  font-size: 30px;
   text-align: center;
-
+  margin: 0;
 }
 
-.results__amount  {
+.results__amount {
   text-align: left;
-  padding: 0px 20px 0px 150px;
-
+  margin: 0;
+  /*padding: 0px 20px 0px 150px;*/
 }
 
-span {
+.results__amount--color {
   color: red;
 }
+
+
