@@ -39,11 +39,11 @@ class App extends Component {
     return (
       <div className="App">
         <section className="calculator">
-          <h1>Tip Calculator</h1>
+          <h1 className="calculator__heading">Tip Calculator</h1>
           <form className='calculator__form'>
             Desired Tip Percent: <input 
               type="number" 
-              className="calculator__percentage"
+              className="calculator__input-percentage"
               placeholder="20%"
               name='tipPercent'
               value={this.state.tipPercent}
@@ -51,7 +51,7 @@ class App extends Component {
               /><br />
             Total Bill: <input 
               type="number" 
-              className="calculator__total"
+              className="calculator__input-total"
               placeholder='$100.00'
               name='totalBill'
               value={this.state.totalBill}
@@ -59,9 +59,9 @@ class App extends Component {
               />
           </form>
           <div className="results">
-            <h3 className='results__heading'>Tip</h3>
-            <p className='results__amount' >Total Tip Amount: <span>{this.state.totalTip}</span> </p>
-            <p className='results__amount' >Total Bill with Tip Amount: <span>{this.state.totalBillWithTip}</span></p>
+            <h3 className='results__heading'>Tip Totals</h3>
+            <p className='results__amount' >Total Tip Amount: <span className='results__amount--color'>{this.state.totalTip}</span> </p>
+            <p className='results__amount' >Total Bill with Tip Amount: <span className='results__amount--color'>{this.state.totalBillWithTip}</span></p>
           </div>
         </section>
       </div>
