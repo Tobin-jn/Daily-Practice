@@ -39,29 +39,39 @@ class App extends Component {
     return (
       <div className="App">
         <section className="calculator">
-          <h1 className="calculator__heading">Tip Calculator</h1>
-          <form className='calculator__form'>
-            Desired Tip Percent: <input 
+
+          <form className='calculator__form--tip-percent'>
+            <p className='calculator__form-heading'>Tip Percent</p> 
+            <input 
               type="number" 
               className="calculator__input-percentage"
               placeholder="20%"
               name='tipPercent'
               value={this.state.tipPercent}
               onChange={this.handleChange}
-              /><br />
-            Total Bill: <input 
+            />
+          </form>
+
+          <form className='calculator__form--bill-amount'>
+            <p className='calculator__form-heading'>Bill</p>
+            <input 
               type="number" 
               className="calculator__input-total"
               placeholder='$100.00'
               name='totalBill'
               value={this.state.totalBill}
               onChange={this.handleChange}
-              />
+            />
           </form>
-          <div className="results">
-            <h3 className='results__heading'>Tip Totals</h3>
-            <p className='results__amount' >Total Tip Amount: <span className='results__amount--color'>{this.state.totalTip}</span> </p>
-            <p className='results__amount' >Total Bill with Tip Amount: <span className='results__amount--color'>{this.state.totalBillWithTip}</span></p>
+
+          <div className="tip-results">
+            <p className='results__amount-tip' >Total Tip</p>
+            <p className='results__amount--color'>{this.state.totalTip}</p>
+          </div>
+
+          <div className="bill-results">
+            <p className='results__amount-bill' >Total Bill</p>
+            <p className='results__amount--color'>{this.state.totalBillWithTip}</p>
           </div>
         </section>
       </div>
@@ -70,3 +80,7 @@ class App extends Component {
 }
 
 export default App;
+          // <h1 className="calculator__heading">Tip Calculator</h1>
+// 
+            // <h3 className='results__heading'>Tip Totals</h3>
+
