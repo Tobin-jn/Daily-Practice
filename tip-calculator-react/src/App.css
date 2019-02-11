@@ -1,48 +1,63 @@
 
-.calculator {
-  border: solid 2px black;
-  margin: 40px;
-  text-align: center;
-}
-
 .calculator__heading {
   font-size: 30px;
 }
 
-.calculator__form {
+.calculator {
+  border: solid 2px black;
+  margin: 40px;
+  width: 400px;
+  height: 400px;
+  display: grid;
+  grid-template-columns: 200px 200px;
+}
+
+.calculator__form--tip-percent,
+.calculator__form--bill-amount {
   font-size: 24px;
   text-align: left;
 }
 
-.calculator__input-percentage {
-  font-size: 24px;
+.calculator__form-heading {
   text-align: center;
+  margin: 10px 0 0 0;
 }
 
+.calculator__input-percentage,
 .calculator__input-total {
   font-size: 24px;
   text-align: center;
+  display: block;
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
 }
 
-.results {
+
+
+.tip-results,
+.bill-results {
   font-size: 1.5em;
   background-color: lightGray;
   padding: 10px 0 10px 0;
+  border: red solid 2px;
 }
 
-.results__heading {
-  font-size: 30px;
+
+.results__amount-tip,
+.results__amount-bill {
   text-align: center;
-  margin: 0;
-}
-
-.results__amount {
-  text-align: left;
   margin: 0;
 }
 
 .results__amount--color {
+  text-align: center;
   color: red;
+  font-size: 30px;
+  padding: 32px 0;
+  width: 100px;
+  border: green solid 2px;
+  margin: 0 auto;
 }
 
 
